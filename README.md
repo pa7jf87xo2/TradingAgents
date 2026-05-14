@@ -30,10 +30,10 @@
 > **Personal fork** — I'm using this to learn LLM-based trading systems and experiment with different model providers. Main changes from upstream are tracked in my [personal notes](NOTES.md).
 >
 > **My setup:** I primarily run this with the Gemini provider since I have free-tier API access. If you're following along, swap `provider` to `"gemini"` in your config and set `GOOGLE_API_KEY` in your `.env`.
+>
+> **Tip:** I've found that setting `max_debate_rounds` to `1` in the config speeds up local experimentation significantly — the default of `3` is better for accuracy but burns through API quota fast on the free tier.
 
 ## News
 - [2026-04] **TradingAgents v0.2.4** released with structured-output agents (Research Manager, Trader, Portfolio Manager), LangGraph checkpoint resume, persistent decision log, DeepSeek/Qwen/GLM/Azure provider support, Docker, and a Windows UTF-8 encoding fix. See [CHANGELOG.md](CHANGELOG.md) for the full list.
 - [2026-03] **TradingAgents v0.2.3** released with multi-language support, GPT-5.4 family models, unified model catalog, backtesting date fidelity, and proxy support.
-- [2026-03] **TradingAgents v0.2.2** released with GPT-5.4/Gemini 3.1/Claude 4.6 model coverage, five-tier rating scale, OpenAI Responses API, Anthropic effort control, and cross-platform stability.
-- [2026-02] **TradingAgents v0.2.0** released with multi-provider LLM support (GPT-5.x, Gemini 3.x, Claude 4.x, Grok 4.x) and improved system architecture.
-- [2026-01] **Trading-R1** [Te
+- [2026-03] **TradingAgents v0.2.2** released with GPT-5.4/Gemini 3.1/Claude 4.6 model coverage, five-tier rating scale, OpenAI Responses API, Anthropic effort control, and 
